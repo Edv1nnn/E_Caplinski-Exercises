@@ -9,4 +9,4 @@ if (x > y) {
   console.log(`Didesnis skaičius yra: ${y}`);
 } else {
   console.log(`Skaičiai yra lygūs: ${x}`);
-}
+};
