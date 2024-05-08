@@ -1,13 +1,13 @@
 "use strict";
 
-function kiekKartuNuvažiuosVairuotojas(n, m) {
+function howManyTimesDriverWillGo(n, m) {
 
-    let kartu = Math.ceil(n / m);
-    return kartu;
+    let times = Math.ceil(n / m);
+    return times;
 };
 
-let prekiuDezes = 35;
-let masinosTalpa = 10;
+let boxes = 35;
+let carCapacity = 10;
 
-let kartuNuvažiuos = kiekKartuNuvažiuosVairuotojas(prekiuDezes, masinosTalpa);
-console.log(`Vairuotojas turės nuvažiuoti į sandėlį ${kartuNuvažiuos} kartus.`);
+let timesToGo = howManyTimesDriverWillGo(boxes, carCapacity);
+console.log(`The driver will have to go to the warehouse ${timesToGo} times.`);

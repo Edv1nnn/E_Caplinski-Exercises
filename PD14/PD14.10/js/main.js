@@ -1,9 +1,9 @@
 "use strict";
 
-let skaicius = 100;
+let number = 100;
 do {
-    if (skaicius % 3 === 0) {
-        console.log(skaicius);
+    if (number % 3 === 0) {
+        console.log(number);
     };
-    skaicius++;
-} while (skaicius <= 200);
+    number++;
+} while (number <= 200);

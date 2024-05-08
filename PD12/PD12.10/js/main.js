@@ -7,10 +7,10 @@ const az = 45;
 const k = 3;
 const t = 5;
 
-const distancija = (p * k * pz + a * k * az) / 100;
-const metrai = distancija | 0;
-const centimetrai = ((distancija - metrai) * 100) | 0;
+const distance = (p * k * pz + a * k * az) / 100;
+const meters = Math.floor(distance);
+const centimeters = Math.floor((distance - meters) * 100);
 
-const greitis = distancija / t;
+const speed = distance / t;
 
-console.log(`${metrai} ${centimetrai} ${greitis.toFixed(2)}`);
+console.log(`${meters}m ${centimeters}cm ${speed.toFixed(2)}km/h`);

@@ -1,16 +1,16 @@
 "use strict";
 
-let eilute = "JavaScript for all";
+let line = "JavaScript for all";
 
 let stack = [];
 
-for (let i = 0; i < eilute.length; i++) {
-    stack.push(eilute[i]);
+for (let i = 0; i < line.length; i++) {
+    stack.push(line[i]);
 };
 
-let atvirksciaiEilute = '';
+let reversedLine = '';
 while (stack.length > 0) {
-    atvirksciaiEilute += stack.pop();
+    reversedLine += stack.pop();
 };
 
-console.log(atvirksciaiEilute);
+console.log(reversedLine);

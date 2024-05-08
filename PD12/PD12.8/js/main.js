@@ -1,14 +1,14 @@
 "use strict";
 
-const bakasTalpa = 112;
-const kuroSanaudosN = 11;
+const tankCapacity = 112;
+const fuelConsumptionN = 11;
 
-let dienos = 0;
-let likoDegalu = bakasTalpa;
+let days = 0;
+let remainingFuel = tankCapacity;
 
-while (likoDegalu >= ((dienos % 2 === 0) ? kuroSanaudosN : 2 * kuroSanaudosN)) {
-    likoDegalu -= ((dienos % 2 === 0) ? kuroSanaudosN : 2 * kuroSanaudosN);
-    dienos++;
+while (remainingFuel >= ((days % 2 === 0) ? fuelConsumptionN : 2 * fuelConsumptionN)) {
+    remainingFuel -= ((days % 2 === 0) ? fuelConsumptionN : 2 * fuelConsumptionN);
+    days++;
 }
 
-console.log("Keliauti bus galima " + dienos + " dienas");
+console.log("You will be able to travel for " + days + " days.");

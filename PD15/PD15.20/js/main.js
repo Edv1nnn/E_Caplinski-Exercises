@@ -1,16 +1,18 @@
-const Masyvas = [NaN, 1, 2, NaN, 5, 6];
-const nurodoSuNaN = rastiNaN(Masyvas);
+"use strict";
 
-function rastiNaN(masyvas) {
-    const indeksaiSuNaN = [];
+const Array = [NaN, 1, 2, NaN, 5, 6];
+const indicesWithNaN = findNaN(Array);
 
-    masyvas.forEach((element, index) => {
+function findNaN(array) {
+    const indices = [];
+
+    array.forEach((element, index) => {
         if (isNaN(element)) {
-            indeksaiSuNaN.push(index);
+            indices.push(index);
         }
     });
 
-    return indeksaiSuNaN;
+    return indices;
 }
 
-console.log("Indeksai su NaN:", nurodoSuNaN);
+console.log("Indices with NaN:", indicesWithNaN);

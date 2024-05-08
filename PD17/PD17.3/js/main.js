@@ -1,8 +1,8 @@
 "use strict";
 
-const buttonBackground = document.getElementById("changeBackground");
+const changeBackgroundButton = document.getElementById("changeBackground");
 
-buttonBackground.addEventListener("click", function () {
+changeBackgroundButton.addEventListener("click", function () {
     const staticColor = "red";
     document.body.style.backgroundColor = staticColor;
 });

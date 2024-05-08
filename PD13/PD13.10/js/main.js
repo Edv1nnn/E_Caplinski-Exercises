@@ -1,15 +1,15 @@
 "use strict";
 
-function rastiDidziausiuSkaiciuSuma(a, b, c) {
-    let skaiciai = [a, b, c];
-    skaiciai.sort((x, y) => y - x);
-    let sumaDidziausiu = skaiciai[0] + skaiciai[1];
-    return sumaDidziausiu;
+function findSumOfLargestNumbers(a, b, c) {
+    let numbers = [a, b, c];
+    numbers.sort((x, y) => y - x);
+    let sumOfLargest = numbers[0] + numbers[1];
+    return sumOfLargest;
 };
 
 let a = 2;
 let b = 4;
 let c = 6;
 
-let rezultatas = rastiDidziausiuSkaiciuSuma(a, b, c);
-console.log(`Dviejų didžiausių skaičių suma yra: ${rezultatas}`);
+let result = findSumOfLargestNumbers(a, b, c);
+console.log(`The sum of the two largest numbers is: ${result}`);

@@ -1,9 +1,11 @@
-const Masyvas = [5, 3, 8, 1, 2, 3, 7, 1, 1, 4, 7, 10];
-const rezultatas = maziausiasNumeris(Masyvas);
+"use strict";
 
-function maziausiasNumeris(masyvas) {
-    const specialusMasyvas = [...new Set(masyvas)].sort((a, b) => a - b);
-    return specialusMasyvas.length >= 3 ? specialusMasyvas[2] : "Nepakanka";
+const Array = [5, 3, 8, 1, 2, 3, 7, 1, 1, 4, 7, 10];
+const result = smallestNumber(Array);
+
+function smallestNumber(array) {
+    const uniqueArray = [...new Set(array)].sort((a, b) => a - b);
+    return uniqueArray.length >= 3 ? uniqueArray[2] : "Not enough";
 }
 
-console.log("Trečias mažiausias skaičius yra:", rezultatas);
+console.log("The third smallest number is:", result);

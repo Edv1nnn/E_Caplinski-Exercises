@@ -1,19 +1,19 @@
 "use strict";
 
-function arDaliklis(a, b) {
+function divisorCheck(a, b) {
     if (b === 0) {
-        return "Negalima dalinti iš nulio.";
+        return "Cannot divide by zero.";
     }
 
     if (a % b === 0) {
-        return `${a} yra ${b} daliklis.`;
+        return `${a} is divisible by ${b}.`;
     } else {
-        return `${a} nėra ${b} daliklis.`;
-    };
-};
+        return `${a} is not divisible by ${b}.`;
+    }
+}
 
 let b = 14;
 let a = 6;
 
-let rezultatas = arDaliklis(a, b);
-console.log(rezultatas);
+let result = divisorCheck(a, b);
+console.log(result);

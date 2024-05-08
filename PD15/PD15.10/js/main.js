@@ -1,7 +1,9 @@
-const masyvas = ["Obuolys", "Bananas", "Persikas", "Obuolys", "Apelsinas"];
+"use strict";
 
-function pasalintiDublikatus(data) {
+const array = ["Apple", "Banana", "Peach", "Apple", "Orange"];
+
+function removeDuplicates(data) {
     return Array.from(new Set(data));
 }
 
-console.log(pasalintiDublikatus(masyvas));
+console.log(removeDuplicates(array));

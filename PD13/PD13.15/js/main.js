@@ -1,20 +1,20 @@
 "use strict";
 
-function skaiciuotiKainaSuNuolaida(t, p) {
-    let kainaSuNuolaida = t * (1 - p / 100);
-    return kainaSuNuolaida;
+function calculatePriceWithDiscount(t, p) {
+    let priceWithDiscount = t * (1 - p / 100);
+    return priceWithDiscount;
 };
 
-function arUztenkaPinigu(sutaupyti, kainaSuNuolaida) {
-    return sutaupyti >= kainaSuNuolaida;
+function isEnoughMoney(savedMoney, priceWithDiscount) {
+    return savedMoney >= priceWithDiscount;
 };
 
-let telefonasKaina = 450;
-let nuolaidaProcentais = 15;
-let sutaupyti = 500;
+let phonePrice = 450;
+let discountPercentage = 15;
+let savedMoney = 500;
 
-let kainaSuNuolaida = skaiciuotiKainaSuNuolaida(telefonasKaina, nuolaidaProcentais);
-console.log(`Išmanusis telefonas su ${nuolaidaProcentais}% nuolaida kainuos ${kainaSuNuolaida.toFixed(2)} eurų.`);
+let priceWithDiscount = calculatePriceWithDiscount(phonePrice, discountPercentage);
+console.log(`The smartphone with a ${discountPercentage}% discount will cost ${priceWithDiscount.toFixed(2)} euros.`);
 
-let pakankaPinigu = arUztenkaPinigu(sutaupyti, kainaSuNuolaida);
-console.log(`Austėjos sutaupyti pinigai ${pakankaPinigu ? 'užtenka' : 'neužtenka'} įsigyti išmanųjį telefoną.`);
+let enoughMoney = isEnoughMoney(savedMoney, priceWithDiscount);
+console.log(`Austeja's saved money ${enoughMoney ? 'is enough' : 'is not enough'} to buy the smartphone.`);

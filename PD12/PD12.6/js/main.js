@@ -1,13 +1,13 @@
 "use strict";
 
-const egluciuSkaicius = 6;
-const egluciuAukstis = [167, 134, 145, 156, 155, 176];
+const numberOfChristmasTrees = 6;
+const treeHeights = [167, 134, 145, 156, 155, 176];
 
-let suma = 0;
-for (let i = 0; i < egluciuSkaicius; i++) {
-  suma += egluciuAukstis[i];
+let sum = 0;
+for (let i = 0; i < numberOfChristmasTrees; i++) {
+  sum += treeHeights[i];
 }
 
-const vidutinisAukstis = suma / egluciuSkaicius;
+const averageHeight = sum / numberOfChristmasTrees;
 
-console.log(`Eglutės aukščio vidurkis: ${vidutinisAukstis.toFixed(2)} cm.`);
+console.log(`Average height of the Christmas trees: ${averageHeight.toFixed(2)} cm.`);

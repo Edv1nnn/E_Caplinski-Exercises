@@ -1,16 +1,17 @@
 "use strict";
 
-let atlyginimai = [824.25, 1225.12, 459.16, 1500];
-let naujiAtlyginimai = [];
+let salaries = [824.25, 1225.12, 459.16, 1500];
+let newSalaries = [];
 
-for (let i = 0; i < atlyginimai.length; i++) {
-    let esamasAtlyginimas = atlyginimai[i];
-    let naujasAtlyginimas = esamasAtlyginimas > 1000
-        ? (esamasAtlyginimas * 1.05).toFixed(2)
-        : (esamasAtlyginimas * 1.1).toFixed(2);
+for (let i = 0; i < salaries.length; i++) {
+    let currentSalary = salaries[i];
+    let newSalary = currentSalary > 1000
+        ? (currentSalary * 1.05).toFixed(2)
+        : (currentSalary * 1.1).toFixed(2);
 
-    naujiAtlyginimai.push(naujasAtlyginimas);
+    newSalaries.push(newSalary);
 };
 
-console.log("Atlyginimas pries:", atlyginimai.join(", "));
-console.log("Atlyginimas po:", naujiAtlyginimai.join(", "));
+console.log("Salaries before:", salaries.join(", "));
+console.log("Salaries after:", newSalaries.join(", "));
+

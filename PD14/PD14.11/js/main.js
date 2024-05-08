@@ -1,21 +1,21 @@
 "use strict";
 
-let a = 50;
+let number = 50;
 
-let dalikliai = [];
-let dalikliuSuma = 0;
-let lyginiuDalikliuSuma = 0;
+let divisors = [];
+let sumOfDivisors = 0;
+let sumOfEvenDivisors = 0;
 
-for (let i = 1; i <= a; i++) {
-    if (a % i === 0) {
-        dalikliai.push(i);
-        dalikliuSuma += i;
+for (let i = 1; i <= number; i++) {
+    if (number % i === 0) {
+        divisors.push(i);
+        sumOfDivisors += i;
         if (i % 2 === 0) {
-            lyginiuDalikliuSuma += i;
+            sumOfEvenDivisors += i;
         };
     };
 };
 
-console.log("Visi dalikliai:", dalikliai);
-console.log("Daliklių suma:", dalikliuSuma);
-console.log("Lyginių daliklių suma:", lyginiuDalikliuSuma);
+console.log("All divisors:", divisors);
+console.log("Sum of divisors:", sumOfDivisors);
+console.log("Sum of even divisors:", sumOfEvenDivisors);

@@ -1,13 +1,12 @@
 "use strict";
 
-function didziausiasStaciakampioPlotas(s) {
-    let krastinesIlgis = Math.floor(s / 2);
-    let plotas = krastinesIlgis * krastinesIlgis;
-
-    return plotas;
+function largestRectangleArea(s) {
+    let sideLength = Math.floor(s / 2);
+    let area = sideLength * sideLength;
+    return area;
 };
 
-let virvesIlgis = 8;
+let ropeLength = 8;
 
-let didziausiasPlotas = didziausiasStaciakampioPlotas(virvesIlgis);
-console.log(`Didžiausias stačiakampio plotas, kurį gali pažymėti ūkininkas su ${virvesIlgis} metrų virve, yra ${didziausiasPlotas} kvadratiniai metrai.`);
+let largestArea = largestRectangleArea(ropeLength);
+console.log(`The largest rectangle area that a farmer can mark with ${ropeLength} meters of rope is ${largestArea} square meters.`);

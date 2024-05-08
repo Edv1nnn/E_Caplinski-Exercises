@@ -4,9 +4,9 @@ const x = 5;
 const y = 10;
 
 if (x > y) {
-  console.log(`Didesnis skaičius yra: ${x}`);
+  console.log(`The greater number is: ${x}`);
 } else if (y > x) {
-  console.log(`Didesnis skaičius yra: ${y}`);
+  console.log(`The greater number is: ${y}`);
 } else {
-  console.log(`Skaičiai yra lygūs: ${x}`);
-};
+  console.log(`The numbers are equal: ${x}`);
+}

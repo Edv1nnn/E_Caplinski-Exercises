@@ -1,16 +1,16 @@
 "use strict";
 
-let ląstelės = 1;
+let cells = 1;
 
-let = laikoIntervalas = 3;
+let timeInterval = 3;
 
-let = laikoTarpai = [3, 6, 9, 12, 15, 18, 21, 24];
+let timePoints = [3, 6, 9, 12, 15, 18, 21, 24];
 
-for (let laikas = 0; laikas <= 24; laikas++) {
-    if (laikoTarpai.includes(laikas)) {
-        console.log(`Po ${laikas} valandų bus ${ląstelės} ląstelės.`);
+for (let time = 0; time <= 24; time++) {
+    if (timePoints.includes(time)) {
+        console.log(`After ${time} hours, there will be ${cells} cells.`);
     };
-    if (laikas % laikoIntervalas === 0) {
-        ląstelės *= 2;
+    if (time % timeInterval === 0) {
+        cells *= 2;
     };
 };

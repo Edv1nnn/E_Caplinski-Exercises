@@ -1,10 +1,10 @@
 "use strict";
 
-let n = 1997;
-let m = 2018;
+let startYear = 1997;
+let endYear = 2018;
 
-for (let metai = n; metai <= m; metai++) {
-    if ((metai % 4 === 0 && metai % 100 !== 0) || metai % 400 === 0) {
-        console.log(metai);
+for (let year = startYear; year <= endYear; year++) {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log(year);
     };
 };

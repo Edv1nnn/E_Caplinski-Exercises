@@ -1,23 +1,25 @@
-function skaiciuotiSuma(skaiciai) {
-    let suma = 0;
-    for (let i = 0; i < skaiciai.length; i++) {
-        suma += skaiciai[i];
+"use strict";
+
+function calculateSum(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
     }
-    return suma;
+    return sum;
 }
 
-function skaiciuotiSandauga(skaiciai) {
-    let sandauga = 1;
-    for (let i = 0; i < skaiciai.length; i++) {
-        sandauga *= skaiciai[i];
+function calculateProduct(numbers) {
+    let product = 1;
+    for (let i = 0; i < numbers.length; i++) {
+        product *= numbers[i];
     }
-    return sandauga;
+    return product;
 }
 
-let skaiciai = [2, 4, 6, 8, 10];
+let numbers = [2, 4, 6, 8, 10];
 
-let suma = skaiciuotiSuma(skaiciai);
-let sandauga = skaiciuotiSandauga(skaiciai);
+let sum = calculateSum(numbers);
+let product = calculateProduct(numbers);
 
-console.log("Suma:", suma);
-console.log("Sandauga:", sandauga);
+console.log("Sum:", sum);
+console.log("Product:", product);

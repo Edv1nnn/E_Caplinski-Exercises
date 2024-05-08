@@ -1,15 +1,15 @@
 "use strict";
 
-const sienosIlgis = 4;
-const sienosAukstis = 3;
-const plytosIlgis = 0.2;
-const plytosAukstis = 0.1;
-const plytosKaina = 0.5;
+const wallLength = 4;
+const wallHeight = 3;
+const brickLength = 0.2;
+const brickHeight = 0.1;
+const brickPrice = 0.5;
 
-const sienosPlotas = sienosIlgis * sienosAukstis;
-const plytosPlotas = plytosIlgis * plytosAukstis;
-const plytuSkaicius = sienosPlotas / plytosPlotas;
+const wallArea = wallLength * wallHeight;
+const brickArea = brickLength * brickHeight;
+const bricksCount = wallArea / brickArea;
 
-const kaina = plytuSkaicius * plytosKaina;
+const totalPrice = bricksCount * brickPrice;
 
-console.log(` Plytų kiekis ${plytuSkaicius}. Plytos kainuos ${kaina.toFixed(2)} Eur.`);
+console.log(`Number of bricks: ${bricksCount}. Total cost of bricks will be ${totalPrice.toFixed(2)} Eur.`);

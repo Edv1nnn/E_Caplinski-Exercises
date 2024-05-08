@@ -1,12 +1,14 @@
-const mas = [5, 6, 1, 4, 9];
-const masy = [10, 20, 3, 13];
+"use strict";
 
-function Skirtumas(mas, masy) {
-    const skirtumas = new Set([...mas, ...masy]);
-    mas.forEach(element => skirtumas.delete(element));
-    masy.forEach(element => skirtumas.delete(element));
-    return Array.from(skirtumas);
+const array1 = [5, 6, 1, 4, 9];
+const array2 = [10, 20, 3, 13];
+
+function Difference(array1, array2) {
+    const difference = new Set([...array1, ...array2]);
+    array1.forEach(element => difference.delete(element));
+    array2.forEach(element => difference.delete(element));
+    return Array.from(difference);
 }
 
-const skirtumoResultatas = Skirtumas(mas, masy);
-console.log("Skirtumas:", skirtumoResultatas);
+const differenceResult = Difference(array1, array2);
+console.log("Difference:", differenceResult);

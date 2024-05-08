@@ -1,5 +1,7 @@
-const Masyvas = [4, 2, 1, 6, 7, 9];
+"use strict";
 
-Masyvas.splice(-3);
+const Array = [4, 2, 1, 6, 7, 9];
 
-console.log(Masyvas);
+Array.splice(-3);
+
+console.log(Array);

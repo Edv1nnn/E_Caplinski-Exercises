@@ -1,11 +1,11 @@
 "use strict";
 
-const puodeliuSkaicius = 7;
+const cupsCount = 7;
 
-const dezesTalpumas = 3;
+const boxCapacity = 3;
 
-const pilnosDezes = Math.floor(puodeliuSkaicius / dezesTalpumas);
+const fullBoxes = Math.floor(cupsCount / boxCapacity);
 
-const likusiosPuodeliai = puodeliuSkaicius % dezesTalpumas;
+const remainingCups = cupsCount % boxCapacity;
 
-console.log(`Pilnų dėžučių skaičius: ${pilnosDezes}. Nesupakuotų puodelių skaičius: ${likusiosPuodeliai}.`);
+console.log(`Number of full boxes: ${fullBoxes}. Number of remaining cups: ${remainingCups}.`);

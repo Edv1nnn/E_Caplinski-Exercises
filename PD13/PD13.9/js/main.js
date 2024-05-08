@@ -1,22 +1,22 @@
 "use strict";
 
-function arTelpaIVoka(a, b, c, d) {
-    if ((c + 2) <= a) {
-        if ((d + 2) <= b) {
+function fitsInEnvelope(envelopeLength, envelopeWidth, cardLength, cardWidth) {
+    if ((cardLength + 2) <= envelopeLength) {
+        if ((cardWidth + 2) <= envelopeWidth) {
             return true;
         }
     }
     return false;
 };
 
-let vokoIlgis = 20;
-let vokoPlotis = 40;
+let envelopeLength = 20;
+let envelopeWidth = 40;
 
-let atvirukoIlgis = 10;
-let atvirukoPlotis = 20;
+let cardLength = 10;
+let cardWidth = 20;
 
-if (arTelpaIVoka(vokoIlgis, vokoPlotis, atvirukoIlgis, atvirukoPlotis)) {
-    console.log("Atvirukas telpa i voka Valiooo");
+if (fitsInEnvelope(envelopeLength, envelopeWidth, cardLength, cardWidth)) {
+    console.log("The card fits in the envelope!");
 } else {
-    console.log("Atvirukas netelpa i voka.");
+    console.log("The card does not fit in the envelope.");
 };

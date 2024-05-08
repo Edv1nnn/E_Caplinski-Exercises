@@ -1,18 +1,18 @@
 "use strict";
 
-let skaicius = 5;
-let rasti = 0;
+let number = 5;
+let found = 0;
 
-while (rasti < 10) {
-    let kvadratas = skaicius * skaicius;
-    let skaiciusTekstas = kvadratas.toString();
+while (found < 10) {
+    let square = number * number;
+    let numberAsString = square.toString();
 
-    let atvirksciai = skaiciusTekstas.split('').reverse().join('');
+    let reversed = numberAsString.split('').reverse().join('');
 
-    if (skaiciusTekstas === atvirksciai) {
-        console.log(skaicius, kvadratas);
-        rasti++;
+    if (numberAsString === reversed) {
+        console.log(number, square);
+        found++;
     }
 
-    skaicius++;
+    number++;
 };

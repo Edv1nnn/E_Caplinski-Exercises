@@ -1,5 +1,7 @@
-let masinos = ['Bmw', 'Audi', 'Mercedes'];
+"use strict";
 
-for (let i = 0; i < masinos.length; i++) {
-    console.log(masinos[i]);
-}
+let cars = ['Bmw', 'Audi', 'Mercedes'];
+
+for (let i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+};

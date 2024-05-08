@@ -1,13 +1,15 @@
-function SukurtasArray(start, end) {
-    const resultatasArray = [];
+"use strict";
+
+function CreatedArray(start, end) {
+    const resultArray = [];
     for (let i = start; i <= end; i++) {
-        resultatasArray.push(i);
+        resultArray.push(i);
     }
-    return resultatasArray;
+    return resultArray;
 }
 
-const Pradzia = 3;
-const Pabaiga = 5;
-const Zingsnis = SukurtasArray(Pradzia, Pabaiga);
+const Start = 3;
+const End = 5;
+const Step = CreatedArray(Start, End);
 
-console.log("Array:", Zingsnis);
+console.log("Array:", Step);

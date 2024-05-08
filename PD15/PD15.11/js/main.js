@@ -1,7 +1,9 @@
-function sumaisytiMasyva(masyvas) {
-    masyvas.sort(() => Math.random() - 0.5);
+"use strict";
+
+function shuffleArray(array) {
+    array.sort(() => Math.random() - 0.5);
 }
 
-const masyvas = ["Berniukas", "Mergaitė", "Persikas", "Obuolys"];
-sumaisytiMasyva(masyvas);
-console.log("Sumaišytas masyvas:", masyvas);
+const array = ["Boy", "Girl", "Peach", "Apple"];
+shuffleArray(array);
+console.log("Shuffled array:", array);

@@ -1,21 +1,21 @@
 "use strict";
 
-function patikrintiPaskolosSalygas(tevoAtlyginimas, motinosAtlyginimas, k, n, s) {
+function checkLoanConditions(fatherSalary, motherSalary, k, n, s) {
 
-    let seimosPajamos = tevoAtlyginimas + motinosAtlyginimas;
+    let familyIncome = fatherSalary + motherSalary;
 
-    if (seimosPajamos / n >= s && seimosPajamos - k >= 0) {
-        return "Bankas suteiks paskolą";
+    if (familyIncome / n >= s && familyIncome - k >= 0) {
+        return "The bank will grant the loan";
     } else {
-        return "Bankas paskolos nesuteiks";
+        return "The bank will not grant the loan";
     };
 };
 
-let tevoAtlyginimas = 4000;
-let motinosAtlyginimas = 2500;
+let fatherSalary = 4000;
+let motherSalary = 2500;
 let k = 4000;
 let n = 2;
 let s = 3000;
 
-let rezultatas = patikrintiPaskolosSalygas(tevoAtlyginimas, motinosAtlyginimas, k, n, s);
-console.log(rezultatas);
+let result = checkLoanConditions(fatherSalary, motherSalary, k, n, s);
+console.log(result);

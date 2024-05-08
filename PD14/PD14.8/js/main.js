@@ -3,11 +3,11 @@
 let i = 0;
 while (i <= 10) {
     let j = 0;
-    let eilute = '';
+    let line = '';
     while (j <= 10) {
-        eilute += `${i * j}\t`;
+        line += `${i * j}\t`;
         j++;
     }
-    console.log(eilute);
+    console.log(line);
     i++;
 };

@@ -1,9 +1,9 @@
 "use strict";
 
-const myElement = document.getElementById("element");
+const targetElement = document.getElementById("element");
 
-if (myElement) {
-    myElement.textContent = "Sveiki, aš esu naujas tekstas!";
+if (targetElement) {
+    targetElement.textContent = "Sveiki, aš esu naujas tekstas!";
 } else {
-    console.log("Item with specified ID not found.");
+    console.log("Element with specified ID not found.");
 };

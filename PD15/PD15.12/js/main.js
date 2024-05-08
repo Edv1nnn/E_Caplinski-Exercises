@@ -1,10 +1,12 @@
-const mas = [5, 6, 1, 4, 9];
-const masy = [10, 20, 3, 13];
+"use strict";
 
-function masskaiciuokle(mas, masy) {
-    return [...new Set([...mas, ...masy])];
+const arr1 = [5, 6, 1, 4, 9];
+const arr2 = [10, 20, 3, 13];
+
+function mergeArrays(arr1, arr2) {
+    return [...new Set([...arr1, ...arr2])];
 }
 
-const BothResult = masskaiciuokle(mas, masy);
+const result = mergeArrays(arr1, arr2);
 
-console.log(BothResult);
+console.log(result);

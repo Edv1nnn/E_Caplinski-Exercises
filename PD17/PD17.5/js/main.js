@@ -1,10 +1,10 @@
 "use strict";
 
-const container = document.getElementById("container");
-const containerElements = container.children;
+const parentContainer = document.getElementById("container");
+const childElements = parentContainer.children;
 
 console.log("Child elements in the parent div:");
 
-for (let i = 0; i < containerElements.length; i++) {
-    console.log(containerElements[i]);
-};
+for (let i = 0; i < childElements.length; i++) {
+    console.log(childElements[i]);
+}

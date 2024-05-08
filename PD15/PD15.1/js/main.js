@@ -1,3 +1,5 @@
+"use strict";
+
 let array1 = "car";
 let array2 = apple;
 

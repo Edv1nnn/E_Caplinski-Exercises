@@ -1,15 +1,15 @@
 "use strict";
 
-for (let sveikasisSkaicius = 1; sveikasisSkaicius <= 300; sveikasisSkaicius++) {
-    let dalikliuSkaicius = 0;
+for (let integer = 1; integer <= 300; integer++) {
+    let divisorCount = 0;
 
-    for (let daliklis = 1; daliklis <= sveikasisSkaicius; daliklis++) {
-        if (sveikasisSkaicius % daliklis === 0) {
-            dalikliuSkaicius++;
+    for (let divisor = 1; divisor <= integer; divisor++) {
+        if (integer % divisor === 0) {
+            divisorCount++;
         }
     };
 
-    if (dalikliuSkaicius === 5) {
-        console.log(sveikasisSkaicius);
+    if (divisorCount === 5) {
+        console.log(integer);
     };
 };

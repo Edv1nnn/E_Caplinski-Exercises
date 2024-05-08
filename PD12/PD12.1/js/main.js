@@ -1,15 +1,15 @@
 "use strict";
 
-const pirmadienis = 5;
-const antradienis = 6;
-const treciadienis = 4;
-const ketvirtadienis = 5;
-const penktadienis = 4;
+const monday = 5;
+const tuesday = 6;
+const wednesday = 4;
+const thursday = 5;
+const friday = 4;
 
-const paskaitosLaikasMin = 45;
+const lectureTimeMin = 45;
 
-const paskaitosPerSavaite = pirmadienis + antradienis + treciadienis + ketvirtadienis + penktadienis;
+const lecturesPerWeek = monday + tuesday + wednesday + thursday + friday;
 
-const paskaitosTrukmeMin = paskaitosPerSavaite * paskaitosLaikasMin;
+const totalLectureTimeMin = lecturesPerWeek * lectureTimeMin;
 
-console.log(`Paskaitų skaičius per savaitę - ${paskaitosPerSavaite}. Tai sudaro ${paskaitosTrukmeMin} minučių.`);
+console.log(`Number of lectures per week - ${lecturesPerWeek}. This totals ${totalLectureTimeMin} minutes.`);

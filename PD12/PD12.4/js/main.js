@@ -1,10 +1,10 @@
 "use strict";
 
-const automobilioGreitis = 60;
-const tunelioIlgis = 264;
+const carSpeed = 60;
+const tunnelLength = 264;
 
-const greitisMs = automobilioGreitis * 1000 / 3600;
+const speedMs = carSpeed * 1000 / 3600;
 
-const laikasSekundemis = tunelioIlgis /greitisMs;
+const timeInSeconds = tunnelLength / speedMs;
 
-console.log(`Automobilis tunelį pravažiuos per ${laikasSekundemis.toFixed(2)} s`);
+console.log(`The car will pass through the tunnel in ${timeInSeconds.toFixed(2)} seconds.`);

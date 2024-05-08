@@ -1,3 +1,5 @@
+"use strict";
+
 function swapCase(str) {
   let result = '';
   for (let i = 0; i < str.length; i++) {
@@ -10,10 +12,10 @@ function swapCase(str) {
   return result;
 }
 
-let masyvas = ['NAmAs', 'Saule', 'MaSina', 'KoMpiUteRis'];
+let array = ['NAmAs', 'Saule', 'MaSina', 'KoMpiUteRis'];
 
-for (let i = 0; i < masyvas.length; i++) {
-  masyvas[i] = swapCase(masyvas[i]);
+for (let i = 0; i < array.length; i++) {
+  array[i] = swapCase(array[i]);
 }
 
-console.log(masyvas);
+console.log(array);

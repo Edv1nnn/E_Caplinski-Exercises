@@ -1,13 +1,13 @@
 "use strict";
 
-let a = 5;
-let pirminis = a > 1;
+let number = 5;
+let prime = number > 1;
 
-for (let daliklis = 2; daliklis < a; daliklis++){
-    if (a % daliklis ===0) {
-        pirminis = false;
-        break
-    };
+for (let divisor = 2; divisor < number; divisor++) {
+    if (number % divisor === 0) {
+        prime = false;
+        break;
+    }
 };
 
-console.log(`${a} ${pirminis ? `yra` : `nėra`} pirminis skaicius.`);
+console.log(`${number} ${prime ? 'is' : 'is not'} a prime number.`);

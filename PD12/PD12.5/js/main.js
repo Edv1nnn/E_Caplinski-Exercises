@@ -1,9 +1,9 @@
 "use strict";
 
-const pradinisZuvuKiekis = 5;
-const zuvuPridejimoPerDiena = 3;
-const dienuSkaicius = 3;
+const initialFishCount = 5;
+const fishAddedPerDay = 3;
+const numberOfDays = 3;
 
-const bendrasZuvuKiekis = pradinisZuvuKiekis + (zuvuPridejimoPerDiena * dienuSkaicius);
+const totalFishCount = initialFishCount + (fishAddedPerDay * numberOfDays);
 
-console.log(`Po ${dienuSkaicius} dienų akvariume gyvens ${bendrasZuvuKiekis} žuvų.`);
+console.log(`After ${numberOfDays} days, there will be ${totalFishCount} fish in the aquarium.`);
