@@ -1,7 +1,7 @@
 "use strict";
 
-function celsiusToFahrenheit(a) {
-    return a * a;
+function celsiusToFahrenheit(a, b) {
+    return a * b;
 }
 
-celsiusToFahrenheit(20);
+console.log(celsiusToFahrenheit(20, 20));
